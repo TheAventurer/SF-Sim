@@ -1,0 +1,1850 @@
+{
+  "format": "sf-sim-scenario",
+  "version": 1,
+  "id": "fractured-spring",
+  "name": "Fractured Spring",
+  "description": "A federal curfew order splits South Florida into rival authorities. Fictional scenario.",
+  "start": "2031-03-03T05:00:00.000Z",
+  "seed": 20310303,
+  "geography": {
+    "coastline": [
+      [
+        [
+          -80.17,
+          27.2
+        ],
+        [
+          -80.0719,
+          26.9448
+        ],
+        [
+          -80.035,
+          26.7
+        ],
+        [
+          -80.045,
+          26.53
+        ],
+        [
+          -80.06,
+          26.46
+        ],
+        [
+          -80.07,
+          26.3348
+        ],
+        [
+          -80.09,
+          26.23
+        ],
+        [
+          -80.1039,
+          26.12
+        ],
+        [
+          -80.115,
+          26.01
+        ],
+        [
+          -80.1219,
+          25.9
+        ],
+        [
+          -80.165,
+          25.9
+        ],
+        [
+          -80.19,
+          25.77
+        ],
+        [
+          -80.235,
+          25.72
+        ],
+        [
+          -80.31,
+          25.6
+        ],
+        [
+          -80.33,
+          25.54
+        ],
+        [
+          -80.33,
+          25.43
+        ],
+        [
+          -80.38,
+          25.3
+        ],
+        [
+          -80.45,
+          25.25
+        ],
+        [
+          -80.65,
+          25.2
+        ],
+        [
+          -80.92,
+          25.14
+        ],
+        [
+          -81.09,
+          25.12
+        ],
+        [
+          -81.17,
+          25.21
+        ],
+        [
+          -81.18,
+          25.26
+        ],
+        [
+          -81.13,
+          25.4
+        ],
+        [
+          -81.23,
+          25.55
+        ],
+        [
+          -81.3,
+          25.68
+        ],
+        [
+          -81.39,
+          25.85
+        ],
+        [
+          -81.68,
+          25.84
+        ],
+        [
+          -81.73,
+          25.95
+        ],
+        [
+          -81.8,
+          26.14
+        ],
+        [
+          -81.85,
+          26.33
+        ],
+        [
+          -81.95,
+          26.45
+        ],
+        [
+          -82.02,
+          26.6
+        ],
+        [
+          -82.1,
+          26.8
+        ],
+        [
+          -82.2,
+          26.95
+        ],
+        [
+          -82.2,
+          27.2
+        ]
+      ]
+    ],
+    "water": [
+      [
+        [
+          -80.6306,
+          27.0043
+        ],
+        [
+          -80.6387,
+          26.9391
+        ],
+        [
+          -80.6626,
+          26.8783
+        ],
+        [
+          -80.7005,
+          26.826
+        ],
+        [
+          -80.75,
+          26.786
+        ],
+        [
+          -80.8076,
+          26.7608
+        ],
+        [
+          -80.8694,
+          26.7522
+        ],
+        [
+          -80.9313,
+          26.7608
+        ],
+        [
+          -80.9889,
+          26.786
+        ],
+        [
+          -81.0384,
+          26.826
+        ],
+        [
+          -81.0763,
+          26.8783
+        ],
+        [
+          -81.1002,
+          26.9391
+        ],
+        [
+          -81.1083,
+          27.0043
+        ],
+        [
+          -81.1002,
+          27.0696
+        ],
+        [
+          -81.0763,
+          27.1304
+        ],
+        [
+          -81.0384,
+          27.1827
+        ],
+        [
+          -80.9889,
+          27.2227
+        ],
+        [
+          -80.9313,
+          27.2479
+        ],
+        [
+          -80.8694,
+          27.2565
+        ],
+        [
+          -80.8076,
+          27.2479
+        ],
+        [
+          -80.75,
+          27.2227
+        ],
+        [
+          -80.7005,
+          27.1827
+        ],
+        [
+          -80.6626,
+          27.1304
+        ],
+        [
+          -80.6387,
+          27.0696
+        ]
+      ]
+    ]
+  },
+  "factions": [
+    {
+      "id": "FRA",
+      "name": "Federal Restoration Authority",
+      "short": "FRA",
+      "kind": "government",
+      "color": "#3D7DD8",
+      "flag": {
+        "style": "hoist",
+        "c1": "#2F5FA8",
+        "c2": "#F2F2F2",
+        "c3": "#F2F2F2",
+        "e": "#2F5FA8"
+      },
+      "leader": "Acting Governor Paul Desrosiers",
+      "ideology": "Continuity of federal authority; order first.",
+      "goals": [
+        "Hold the I-95 corridor",
+        "Reopen the Turnpike to the Keys",
+        "Restore federal control of the ports"
+      ],
+      "stats": {
+        "legitimacy": 62,
+        "morale": 58,
+        "readiness": 70,
+        "supply": 55,
+        "support": 41
+      },
+      "relations": {
+        "SPC": -78,
+        "BCC": 0,
+        "GSA": 35,
+        "GFU": -41,
+        "KFA": 0,
+        "CSM": 0,
+        "TSG": 0
+      }
+    },
+    {
+      "id": "SPC",
+      "name": "Southern Provisional Council",
+      "short": "SPC",
+      "kind": "movement",
+      "color": "#F09A3E",
+      "flag": {
+        "style": "bands",
+        "c1": "#E8892F",
+        "c2": "#1A1A1A",
+        "c3": "#E8892F",
+        "e": "#F2F2F2"
+      },
+      "leader": "Council Chair Ana Lucía Ferrer",
+      "ideology": "Local self-rule for South Dade; anti-federal, agrarian.",
+      "goals": [
+        "Hold Redland and Homestead",
+        "Force a regional election",
+        "Secure fuel for the US-1 route"
+      ],
+      "stats": {
+        "legitimacy": 48,
+        "morale": 71,
+        "readiness": 51,
+        "supply": 74,
+        "support": 39
+      },
+      "relations": {
+        "FRA": -78,
+        "BCC": -35,
+        "GSA": -35,
+        "GFU": 34,
+        "KFA": 0,
+        "CSM": 0,
+        "TSG": 35
+      }
+    },
+    {
+      "id": "BCC",
+      "name": "Biscayne Civic Compact",
+      "short": "BCC",
+      "kind": "municipal",
+      "color": "#E6E1C8",
+      "flag": {
+        "style": "diag",
+        "c1": "#EDE6C9",
+        "c2": "#1F7A74",
+        "c3": "#EDE6C9",
+        "e": "#1F7A74"
+      },
+      "leader": "Compact Speaker Jonah Whitfield",
+      "ideology": "Neutral-leaning; keep services and ports running.",
+      "goals": [
+        "Keep water and power on",
+        "Control port customs",
+        "Stay out of the war"
+      ],
+      "stats": {
+        "legitimacy": 66,
+        "morale": 54,
+        "readiness": 40,
+        "supply": 61,
+        "support": 52
+      },
+      "relations": {
+        "FRA": 0,
+        "SPC": -35,
+        "GSA": 0,
+        "GFU": 0,
+        "KFA": 35,
+        "CSM": 35,
+        "TSG": 81
+      }
+    },
+    {
+      "id": "GSA",
+      "name": "Gulf Coast Sheriffs’ Alliance",
+      "short": "GSA",
+      "kind": "security",
+      "color": "#4FA36B",
+      "flag": {
+        "style": "cross",
+        "c1": "#2E6B45",
+        "c2": "#F2D16B",
+        "c3": "#2E6B45",
+        "e": "#2E6B45"
+      },
+      "leader": "Sheriff Dale Hendricks",
+      "ideology": "Law-and-order enclave; nominally loyal to FRA.",
+      "goals": [
+        "Seal the Everglades crossings",
+        "Keep US-41 safe"
+      ],
+      "stats": {
+        "legitimacy": 57,
+        "morale": 66,
+        "readiness": 63,
+        "supply": 58,
+        "support": 55
+      },
+      "relations": {
+        "FRA": 35,
+        "SPC": -35,
+        "BCC": 0,
+        "GFU": 0,
+        "KFA": 0,
+        "CSM": -35,
+        "TSG": 0
+      }
+    },
+    {
+      "id": "GFU",
+      "name": "Glades Farmers’ Union",
+      "short": "GFU",
+      "kind": "civic",
+      "color": "#B08A4E",
+      "flag": {
+        "style": "chevron",
+        "c1": "#B08A4E",
+        "c2": "#2E5E2E",
+        "c3": "#8A6A38",
+        "e": "#F2E3B5"
+      },
+      "leader": "Union President Marisol Batiste",
+      "ideology": "Agricultural cooperative; trades food for fuel and pay.",
+      "goals": [
+        "Get paid for February deliveries",
+        "Keep irrigation pumps running"
+      ],
+      "stats": {
+        "legitimacy": 60,
+        "morale": 62,
+        "readiness": 25,
+        "supply": 80,
+        "support": 58
+      },
+      "relations": {
+        "FRA": -41,
+        "SPC": 34,
+        "BCC": 0,
+        "GSA": 0,
+        "KFA": 0,
+        "CSM": 0,
+        "TSG": 0
+      }
+    },
+    {
+      "id": "KFA",
+      "name": "Keys Free Assembly",
+      "short": "KFA",
+      "kind": "municipal",
+      "color": "#9B7AD8",
+      "flag": {
+        "style": "bands",
+        "c1": "#7B5CC4",
+        "c2": "#F2F2F2",
+        "c3": "#7B5CC4",
+        "e": "#7B5CC4"
+      },
+      "leader": "Assembly Moderator Theo Lindqvist",
+      "ideology": "Island self-government through town assemblies.",
+      "goals": [
+        "Keep US-1 open",
+        "Secure fuel and food"
+      ],
+      "stats": {
+        "legitimacy": 71,
+        "morale": 63,
+        "readiness": 22,
+        "supply": 35,
+        "support": 70
+      },
+      "relations": {
+        "FRA": 0,
+        "SPC": 0,
+        "BCC": 35,
+        "GSA": 0,
+        "GFU": 0,
+        "CSM": 35,
+        "TSG": 0
+      }
+    },
+    {
+      "id": "CSM",
+      "name": "Caribbean Stabilization Mission",
+      "short": "CSM",
+      "kind": "foreign",
+      "color": "#BDE3F2",
+      "flag": {
+        "style": "ring",
+        "c1": "#DDEFF6",
+        "c2": "#DDEFF6",
+        "c3": "#DDEFF6",
+        "e": "#24406B"
+      },
+      "leader": "Rear Admiral Inés Kalloo",
+      "ideology": "Multinational humanitarian mission; limited mandate.",
+      "goals": [
+        "Win landing rights",
+        "Deliver medical aid"
+      ],
+      "stats": {
+        "legitimacy": 55,
+        "morale": 80,
+        "readiness": 60,
+        "supply": 82,
+        "support": 45
+      },
+      "relations": {
+        "FRA": 0,
+        "SPC": 0,
+        "BCC": 35,
+        "GSA": -35,
+        "GFU": 0,
+        "KFA": 35,
+        "TSG": -35
+      }
+    },
+    {
+      "id": "TSG",
+      "name": "Tidewater Security Group",
+      "short": "TSG",
+      "kind": "mercenary",
+      "color": "#E3B341",
+      "flag": {
+        "style": "chevron",
+        "c1": "#3A3F45",
+        "c2": "#E3B341",
+        "c3": "#3A3F45",
+        "e": "#3A3F45"
+      },
+      "leader": "Managing Director Craig Vossberg",
+      "ideology": "Private contractor; loyalty follows contracts.",
+      "goals": [
+        "Win contracts",
+        "Avoid losses"
+      ],
+      "stats": {
+        "legitimacy": 30,
+        "morale": 77,
+        "readiness": 68,
+        "supply": 70,
+        "support": 20
+      },
+      "relations": {
+        "FRA": 0,
+        "SPC": 35,
+        "BCC": 81,
+        "GSA": 0,
+        "GFU": 0,
+        "KFA": 0,
+        "CSM": -35
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "south-florida",
+      "name": "South Florida",
+      "kind": "region",
+      "parentId": null,
+      "population": 0,
+      "control": {}
+    },
+    {
+      "id": "palm-beach",
+      "name": "Palm Beach County",
+      "kind": "county",
+      "parentId": "south-florida",
+      "population": 0,
+      "control": {}
+    },
+    {
+      "id": "broward",
+      "name": "Broward County",
+      "kind": "county",
+      "parentId": "south-florida",
+      "population": 0,
+      "control": {}
+    },
+    {
+      "id": "miami-dade",
+      "name": "Miami-Dade County",
+      "kind": "county",
+      "parentId": "south-florida",
+      "population": 0,
+      "control": {}
+    },
+    {
+      "id": "monroe",
+      "name": "Monroe County",
+      "kind": "county",
+      "parentId": "south-florida",
+      "population": 0,
+      "control": {}
+    },
+    {
+      "id": "collier",
+      "name": "Collier County",
+      "kind": "county",
+      "parentId": "south-florida",
+      "population": 0,
+      "control": {}
+    },
+    {
+      "id": "pb-coast",
+      "name": "Palm Beach coast",
+      "kind": "zone",
+      "parentId": "palm-beach",
+      "population": 1180000,
+      "control": {
+        "FRA": 0.85
+      },
+      "polygons": [
+        [
+          [
+            -80.5333,
+            27.2
+          ],
+          [
+            -80.17,
+            27.2
+          ],
+          [
+            -80.0719,
+            26.9448
+          ],
+          [
+            -80.035,
+            26.7
+          ],
+          [
+            -80.045,
+            26.53
+          ],
+          [
+            -80.06,
+            26.46
+          ],
+          [
+            -80.07,
+            26.3348
+          ],
+          [
+            -80.075,
+            26.3217
+          ],
+          [
+            -80.5333,
+            26.3217
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "glades",
+      "name": "The Glades",
+      "kind": "zone",
+      "parentId": "palm-beach",
+      "population": 62000,
+      "control": {
+        "GFU": 0.8,
+        "FRA": 0.1
+      },
+      "polygons": [
+        [
+          [
+            -80.8806,
+            27.2
+          ],
+          [
+            -80.5333,
+            27.2
+          ],
+          [
+            -80.5333,
+            26.3217
+          ],
+          [
+            -80.8806,
+            26.3217
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "broward-urban",
+      "name": "Broward",
+      "kind": "zone",
+      "parentId": "broward",
+      "population": 1940000,
+      "control": {
+        "BCC": 0.8,
+        "FRA": 0.05
+      },
+      "polygons": [
+        [
+          [
+            -80.8694,
+            26.3217
+          ],
+          [
+            -80.075,
+            26.3217
+          ],
+          [
+            -80.09,
+            26.23
+          ],
+          [
+            -80.1039,
+            26.12
+          ],
+          [
+            -80.115,
+            26.01
+          ],
+          [
+            -80.1194,
+            25.9609
+          ],
+          [
+            -80.8694,
+            25.9609
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "north-dade",
+      "name": "North Miami-Dade",
+      "kind": "zone",
+      "parentId": "miami-dade",
+      "population": 1350000,
+      "control": {
+        "BCC": 0.7,
+        "SPC": 0.1,
+        "TSG": 0.05
+      },
+      "polygons": [
+        [
+          [
+            -80.8694,
+            25.9609
+          ],
+          [
+            -80.1194,
+            25.9609
+          ],
+          [
+            -80.1219,
+            25.9
+          ],
+          [
+            -80.165,
+            25.9
+          ],
+          [
+            -80.1833,
+            25.8174
+          ],
+          [
+            -80.8694,
+            25.8174
+          ]
+        ],
+        [
+          [
+            -80.1222,
+            25.9
+          ],
+          [
+            -80.1083,
+            25.9
+          ],
+          [
+            -80.125,
+            25.7609
+          ],
+          [
+            -80.1389,
+            25.7609
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "kendall-belt",
+      "name": "Miami–Kendall belt",
+      "kind": "zone",
+      "parentId": "miami-dade",
+      "population": 640000,
+      "control": {
+        "BCC": 0.35,
+        "SPC": 0.4
+      },
+      "polygons": [
+        [
+          [
+            -80.5333,
+            25.8174
+          ],
+          [
+            -80.1833,
+            25.8174
+          ],
+          [
+            -80.19,
+            25.77
+          ],
+          [
+            -80.235,
+            25.72
+          ],
+          [
+            -80.2583,
+            25.687
+          ],
+          [
+            -80.5333,
+            25.687
+          ]
+        ]
+      ],
+      "tags": [
+        "contested"
+      ]
+    },
+    {
+      "id": "south-dade",
+      "name": "South Miami-Dade",
+      "kind": "zone",
+      "parentId": "miami-dade",
+      "population": 410000,
+      "control": {
+        "SPC": 0.75,
+        "FRA": 0.1
+      },
+      "polygons": [
+        [
+          [
+            -80.8694,
+            25.8174
+          ],
+          [
+            -80.5333,
+            25.8174
+          ],
+          [
+            -80.5333,
+            25.687
+          ],
+          [
+            -80.2583,
+            25.687
+          ],
+          [
+            -80.31,
+            25.6
+          ],
+          [
+            -80.33,
+            25.54
+          ],
+          [
+            -80.33,
+            25.43
+          ],
+          [
+            -80.38,
+            25.3
+          ],
+          [
+            -80.45,
+            25.25
+          ],
+          [
+            -80.65,
+            25.2
+          ],
+          [
+            -80.8694,
+            25.1522
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "collier-coast",
+      "name": "Collier coast",
+      "kind": "zone",
+      "parentId": "collier",
+      "population": 390000,
+      "control": {
+        "GSA": 0.85
+      },
+      "polygons": [
+        [
+          [
+            -81.85,
+            26.33
+          ],
+          [
+            -81.3667,
+            26.3217
+          ],
+          [
+            -81.3667,
+            25.8478
+          ],
+          [
+            -81.68,
+            25.84
+          ],
+          [
+            -81.73,
+            25.95
+          ],
+          [
+            -81.8,
+            26.14
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "everglades",
+      "name": "Everglades",
+      "kind": "zone",
+      "parentId": "monroe",
+      "population": 1500,
+      "control": {},
+      "polygons": [
+        [
+          [
+            -81.3667,
+            26.3217
+          ],
+          [
+            -80.8694,
+            26.3217
+          ],
+          [
+            -80.8694,
+            25.1522
+          ],
+          [
+            -80.92,
+            25.14
+          ],
+          [
+            -81.09,
+            25.12
+          ],
+          [
+            -81.17,
+            25.21
+          ],
+          [
+            -81.18,
+            25.26
+          ],
+          [
+            -81.13,
+            25.4
+          ],
+          [
+            -81.23,
+            25.55
+          ],
+          [
+            -81.3,
+            25.68
+          ],
+          [
+            -81.39,
+            25.85
+          ],
+          [
+            -81.3667,
+            25.8478
+          ]
+        ]
+      ],
+      "tags": [
+        "wilderness"
+      ]
+    },
+    {
+      "id": "keys",
+      "name": "Florida Keys",
+      "kind": "zone",
+      "parentId": "monroe",
+      "population": 82000,
+      "control": {
+        "KFA": 0.9
+      },
+      "polygons": [
+        [
+          [
+            -80.29,
+            25.3
+          ],
+          [
+            -80.2778,
+            25.2957
+          ],
+          [
+            -80.4194,
+            25.0913
+          ],
+          [
+            -80.5139,
+            25.013
+          ],
+          [
+            -80.525,
+            25.0304
+          ],
+          [
+            -80.4333,
+            25.113
+          ]
+        ],
+        [
+          [
+            -80.6011,
+            24.9462
+          ],
+          [
+            -80.6041,
+            24.9337
+          ],
+          [
+            -80.6171,
+            24.9165
+          ],
+          [
+            -80.6353,
+            24.9014
+          ],
+          [
+            -80.6517,
+            24.894
+          ],
+          [
+            -80.66,
+            24.8972
+          ],
+          [
+            -80.657,
+            24.9098
+          ],
+          [
+            -80.644,
+            24.9269
+          ],
+          [
+            -80.6258,
+            24.9421
+          ],
+          [
+            -80.6094,
+            24.9495
+          ]
+        ],
+        [
+          [
+            -80.7017,
+            24.8801
+          ],
+          [
+            -80.705,
+            24.87
+          ],
+          [
+            -80.717,
+            24.8582
+          ],
+          [
+            -80.7331,
+            24.849
+          ],
+          [
+            -80.7472,
+            24.846
+          ],
+          [
+            -80.7539,
+            24.8503
+          ],
+          [
+            -80.7506,
+            24.8604
+          ],
+          [
+            -80.7386,
+            24.8723
+          ],
+          [
+            -80.7224,
+            24.8815
+          ],
+          [
+            -80.7083,
+            24.8845
+          ]
+        ],
+        [
+          [
+            -80.7901,
+            24.8349
+          ],
+          [
+            -80.7943,
+            24.825
+          ],
+          [
+            -80.8082,
+            24.8139
+          ],
+          [
+            -80.8263,
+            24.8057
+          ],
+          [
+            -80.8419,
+            24.8037
+          ],
+          [
+            -80.8488,
+            24.8086
+          ],
+          [
+            -80.8446,
+            24.8184
+          ],
+          [
+            -80.8307,
+            24.8296
+          ],
+          [
+            -80.8126,
+            24.8377
+          ],
+          [
+            -80.797,
+            24.8398
+          ]
+        ],
+        [
+          [
+            -80.9092,
+            24.7757
+          ],
+          [
+            -80.9131,
+            24.7663
+          ],
+          [
+            -80.9259,
+            24.7564
+          ],
+          [
+            -80.9425,
+            24.7499
+          ],
+          [
+            -80.9567,
+            24.7493
+          ],
+          [
+            -80.9631,
+            24.7547
+          ],
+          [
+            -80.9591,
+            24.7641
+          ],
+          [
+            -80.9464,
+            24.774
+          ],
+          [
+            -80.9297,
+            24.7805
+          ],
+          [
+            -80.9155,
+            24.7812
+          ]
+        ],
+        [
+          [
+            -81.0147,
+            24.7335
+          ],
+          [
+            -81.0202,
+            24.7225
+          ],
+          [
+            -81.0372,
+            24.7112
+          ],
+          [
+            -81.059,
+            24.704
+          ],
+          [
+            -81.0774,
+            24.7035
+          ],
+          [
+            -81.0853,
+            24.71
+          ],
+          [
+            -81.0798,
+            24.721
+          ],
+          [
+            -81.0628,
+            24.7323
+          ],
+          [
+            -81.041,
+            24.7395
+          ],
+          [
+            -81.0226,
+            24.74
+          ]
+        ],
+        [
+          [
+            -81.3361,
+            24.6696
+          ],
+          [
+            -81.3409,
+            24.6568
+          ],
+          [
+            -81.3534,
+            24.6489
+          ],
+          [
+            -81.3688,
+            24.6489
+          ],
+          [
+            -81.3813,
+            24.6568
+          ],
+          [
+            -81.3861,
+            24.6696
+          ],
+          [
+            -81.3813,
+            24.6823
+          ],
+          [
+            -81.3688,
+            24.6902
+          ],
+          [
+            -81.3534,
+            24.6902
+          ],
+          [
+            -81.3409,
+            24.6823
+          ]
+        ],
+        [
+          [
+            -81.4333,
+            24.6565
+          ],
+          [
+            -81.4376,
+            24.6489
+          ],
+          [
+            -81.4487,
+            24.6441
+          ],
+          [
+            -81.4624,
+            24.6441
+          ],
+          [
+            -81.4735,
+            24.6489
+          ],
+          [
+            -81.4778,
+            24.6565
+          ],
+          [
+            -81.4735,
+            24.6642
+          ],
+          [
+            -81.4624,
+            24.6689
+          ],
+          [
+            -81.4487,
+            24.6689
+          ],
+          [
+            -81.4376,
+            24.6642
+          ]
+        ],
+        [
+          [
+            -81.525,
+            24.6522
+          ],
+          [
+            -81.5298,
+            24.6432
+          ],
+          [
+            -81.5423,
+            24.6377
+          ],
+          [
+            -81.5577,
+            24.6377
+          ],
+          [
+            -81.5702,
+            24.6432
+          ],
+          [
+            -81.575,
+            24.6522
+          ],
+          [
+            -81.5702,
+            24.6611
+          ],
+          [
+            -81.5577,
+            24.6666
+          ],
+          [
+            -81.5423,
+            24.6666
+          ],
+          [
+            -81.5298,
+            24.6611
+          ]
+        ],
+        [
+          [
+            -81.6364,
+            24.6027
+          ],
+          [
+            -81.6415,
+            24.5963
+          ],
+          [
+            -81.6529,
+            24.5946
+          ],
+          [
+            -81.6665,
+            24.5983
+          ],
+          [
+            -81.6769,
+            24.606
+          ],
+          [
+            -81.6802,
+            24.6147
+          ],
+          [
+            -81.6752,
+            24.6211
+          ],
+          [
+            -81.6637,
+            24.6228
+          ],
+          [
+            -81.6502,
+            24.619
+          ],
+          [
+            -81.6398,
+            24.6114
+          ]
+        ],
+        [
+          [
+            -81.7444,
+            24.5565
+          ],
+          [
+            -81.7503,
+            24.5437
+          ],
+          [
+            -81.7656,
+            24.5358
+          ],
+          [
+            -81.7844,
+            24.5358
+          ],
+          [
+            -81.7997,
+            24.5437
+          ],
+          [
+            -81.8056,
+            24.5565
+          ],
+          [
+            -81.7997,
+            24.5693
+          ],
+          [
+            -81.7844,
+            24.5772
+          ],
+          [
+            -81.7656,
+            24.5772
+          ],
+          [
+            -81.7503,
+            24.5693
+          ]
+        ]
+      ],
+      "tags": []
+    },
+    {
+      "id": "west-palm-beach",
+      "name": "West Palm Beach",
+      "kind": "city",
+      "parentId": "pb-coast",
+      "population": 120000,
+      "control": {
+        "FRA": 0.95
+      },
+      "point": [
+        -80.0528,
+        26.713
+      ],
+      "tags": []
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "kind": "city",
+      "parentId": "pb-coast",
+      "population": 62000,
+      "control": {
+        "FRA": 0.9
+      },
+      "point": [
+        -80.0889,
+        26.9304
+      ],
+      "tags": []
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington",
+      "kind": "city",
+      "parentId": "pb-coast",
+      "population": 61000,
+      "control": {
+        "FRA": 0.8
+      },
+      "point": [
+        -80.2389,
+        26.6609
+      ],
+      "tags": [
+        "label-left"
+      ]
+    },
+    {
+      "id": "boca-raton",
+      "name": "Boca Raton",
+      "kind": "city",
+      "parentId": "pb-coast",
+      "population": 100000,
+      "control": {
+        "FRA": 0.8
+      },
+      "point": [
+        -80.1,
+        26.3609
+      ],
+      "tags": [
+        "data-center"
+      ]
+    },
+    {
+      "id": "belle-glade",
+      "name": "Belle Glade",
+      "kind": "city",
+      "parentId": "glades",
+      "population": 17000,
+      "control": {
+        "GFU": 0.9
+      },
+      "point": [
+        -80.6694,
+        26.6783
+      ],
+      "tags": []
+    },
+    {
+      "id": "clewiston",
+      "name": "Clewiston",
+      "kind": "city",
+      "parentId": "glades",
+      "population": 8000,
+      "control": {
+        "GFU": 0.85
+      },
+      "point": [
+        -80.9306,
+        26.7391
+      ],
+      "tags": [
+        "label-left"
+      ]
+    },
+    {
+      "id": "fort-lauderdale",
+      "name": "Fort Lauderdale",
+      "kind": "city",
+      "parentId": "broward-urban",
+      "population": 185000,
+      "control": {
+        "BCC": 0.9
+      },
+      "point": [
+        -80.1389,
+        26.1217
+      ],
+      "tags": [
+        "port"
+      ]
+    },
+    {
+      "id": "hollywood",
+      "name": "Hollywood",
+      "kind": "city",
+      "parentId": "broward-urban",
+      "population": 155000,
+      "control": {
+        "BCC": 0.85
+      },
+      "point": [
+        -80.15,
+        26.0087
+      ],
+      "tags": []
+    },
+    {
+      "id": "pembroke-pines",
+      "name": "Pembroke Pines",
+      "kind": "city",
+      "parentId": "broward-urban",
+      "population": 170000,
+      "control": {
+        "BCC": 0.8
+      },
+      "point": [
+        -80.3,
+        26.0087
+      ],
+      "tags": [
+        "label-left"
+      ]
+    },
+    {
+      "id": "hialeah",
+      "name": "Hialeah",
+      "kind": "city",
+      "parentId": "north-dade",
+      "population": 225000,
+      "control": {
+        "BCC": 0.7,
+        "SPC": 0.1
+      },
+      "point": [
+        -80.2806,
+        25.8609
+      ],
+      "tags": []
+    },
+    {
+      "id": "doral",
+      "name": "Doral",
+      "kind": "city",
+      "parentId": "north-dade",
+      "population": 78000,
+      "control": {
+        "BCC": 0.65,
+        "TSG": 0.15
+      },
+      "point": [
+        -80.35,
+        25.8217
+      ],
+      "tags": [
+        "label-left"
+      ]
+    },
+    {
+      "id": "miami",
+      "name": "Miami",
+      "kind": "city",
+      "parentId": "kendall-belt",
+      "population": 450000,
+      "control": {
+        "BCC": 0.45,
+        "SPC": 0.25,
+        "FRA": 0.1
+      },
+      "point": [
+        -80.1917,
+        25.7696
+      ],
+      "tags": [
+        "port"
+      ]
+    },
+    {
+      "id": "kendall",
+      "name": "Kendall",
+      "kind": "city",
+      "parentId": "kendall-belt",
+      "population": 80000,
+      "control": {
+        "BCC": 0.35,
+        "SPC": 0.45
+      },
+      "point": [
+        -80.3194,
+        25.6783
+      ],
+      "tags": []
+    },
+    {
+      "id": "homestead",
+      "name": "Homestead",
+      "kind": "city",
+      "parentId": "south-dade",
+      "population": 94300,
+      "control": {
+        "SPC": 0.55,
+        "FRA": 0.3
+      },
+      "point": [
+        -80.4806,
+        25.4696
+      ],
+      "tags": [
+        "air-base"
+      ]
+    },
+    {
+      "id": "key-largo",
+      "name": "Key Largo",
+      "kind": "city",
+      "parentId": "keys",
+      "population": 10000,
+      "control": {
+        "KFA": 0.95
+      },
+      "point": [
+        -80.4389,
+        25.0913
+      ],
+      "tags": []
+    },
+    {
+      "id": "marathon",
+      "name": "Marathon",
+      "kind": "city",
+      "parentId": "keys",
+      "population": 9000,
+      "control": {
+        "KFA": 0.95
+      },
+      "point": [
+        -81.05,
+        24.7217
+      ],
+      "tags": []
+    },
+    {
+      "id": "key-west",
+      "name": "Key West",
+      "kind": "city",
+      "parentId": "keys",
+      "population": 26000,
+      "control": {
+        "KFA": 0.9
+      },
+      "point": [
+        -81.775,
+        24.5565
+      ],
+      "tags": [
+        "port"
+      ]
+    },
+    {
+      "id": "naples",
+      "name": "Naples",
+      "kind": "city",
+      "parentId": "collier-coast",
+      "population": 20000,
+      "control": {
+        "GSA": 0.9
+      },
+      "point": [
+        -81.7889,
+        26.1391
+      ],
+      "tags": []
+    },
+    {
+      "id": "immokalee",
+      "name": "Immokalee",
+      "kind": "city",
+      "parentId": "collier-coast",
+      "population": 25000,
+      "control": {
+        "GSA": 0.7
+      },
+      "point": [
+        -81.4194,
+        26.4217
+      ],
+      "tags": []
+    },
+    {
+      "id": "everglades-city",
+      "name": "Everglades City",
+      "kind": "city",
+      "parentId": "everglades",
+      "population": 400,
+      "control": {},
+      "point": [
+        -81.3806,
+        25.8609
+      ],
+      "tags": []
+    },
+    {
+      "id": "redland",
+      "name": "Redland",
+      "kind": "district",
+      "parentId": "homestead",
+      "population": 18200,
+      "control": {
+        "SPC": 0.86
+      },
+      "tags": []
+    },
+    {
+      "id": "homestead-downtown",
+      "name": "Downtown Homestead",
+      "kind": "district",
+      "parentId": "homestead",
+      "population": 27600,
+      "control": {
+        "FRA": 0.34,
+        "SPC": 0.41
+      },
+      "tags": [
+        "contested"
+      ]
+    },
+    {
+      "id": "air-reserve-base",
+      "name": "Air Reserve Base",
+      "kind": "district",
+      "parentId": "homestead",
+      "population": 3100,
+      "control": {
+        "FRA": 0.95
+      },
+      "tags": []
+    },
+    {
+      "id": "florida-city",
+      "name": "Florida City",
+      "kind": "district",
+      "parentId": "homestead",
+      "population": 31800,
+      "control": {
+        "SPC": 0.74
+      },
+      "tags": []
+    },
+    {
+      "id": "south-dade-farms",
+      "name": "South Dade farms",
+      "kind": "district",
+      "parentId": "homestead",
+      "population": 13600,
+      "control": {
+        "FRA": 0.18,
+        "SPC": 0.52
+      },
+      "tags": []
+    }
+  ],
+  "events": [
+    {
+      "id": "E-0001",
+      "time": "2031-03-03T05:00:00.000Z",
+      "locationId": "south-florida",
+      "participants": [
+        "FRA",
+        "SPC",
+        "BCC"
+      ],
+      "severity": "major",
+      "category": "political",
+      "headline": "Federal curfew order splits South Florida",
+      "body": "The federal emergency curfew is rejected by several county and city governments. Rival authorities begin to form.",
+      "causes": [],
+      "changes": []
+    }
+  ]
+}
